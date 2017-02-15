@@ -2076,6 +2076,12 @@
 			color: #fff !important;
 		}
 
+		.button.special_purple {
+			background: #bfa6ff;
+			border-color: #bfa6ff;
+			color: #fff !important;
+		}
+
 			input[type="button"].special:hover,
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
