@@ -2663,7 +2663,7 @@ td.rightBorder {
 		/* Section/Article */
 
 			header br {
-				display: none;
+				/*display: none;*/
 			}
 
 			header.major {
@@ -2687,7 +2687,7 @@ td.rightBorder {
 			}
 
 				.wrapper.special br {
-					display: none;
+					/*display: none;*/
 				}
 
 				.wrapper.style1 {
@@ -3046,7 +3046,7 @@ td.rightBorder {
 			}
 
 			p {
-				text-align: justify;
+				/*text-align: justify;*/
 			}
 
 		/* Section/Article */
@@ -3127,7 +3127,7 @@ td.rightBorder {
 			}
 
 				.wrapper.special br {
-					display: none;
+					/*display: none;*/
 				}
 
 				.wrapper.style1 {
@@ -3165,9 +3165,9 @@ td.rightBorder {
 						text-align: center;
 					}
 
-					#banner .inner br {
+					/*#banner .inner br {
 						display: none;
-					}
+					*/}
 
 		/* Main */
 
