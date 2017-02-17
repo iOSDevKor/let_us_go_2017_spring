@@ -1887,6 +1887,11 @@
 				color: #fff;
 			}
 
+			.icon.circle.fa-mobile {
+				background: #ef5d46;
+				color: #fff;
+			}
+
 				.icon.circle.fa-github:hover {
 					background: #e1b89b;
 				}
@@ -2028,6 +2033,17 @@
 				background: #7c8081;
 				color: #fff;
 			}
+
+/* td */
+td.leftPadding {
+	text-align: left;
+	padding-left: 10px;
+}
+
+td.rightBorder {
+	border-right: 1px solid #fff;
+	padding-right: 10px;
+}
 
 /* Button */
 
@@ -2451,7 +2467,7 @@
 					margin: 0;
 					padding-left: 0.05em;
 					position: relative;
-					text-transform: uppercase;
+					text-transform: none;
 				}
 
 			#banner .inner p {
