@@ -14,8 +14,14 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<link rel="icon" href="images/icon.png">
+		<meta name="keywords" content="iOS Swift Realm Objective-C Developers 개발 세미나 컨퍼런스 모임 Korea" />
+		<meta name="description" content="iOS Developers Korea 세미나 let us: Go!" />
+    	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=7lFyto6R96UNlB_tXrPQ"></script>
+
 	</head>
 	<body class="index">
+
+		<!-- <script src="assets/navermaps/docs/js/main.js"></script> -->
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -73,7 +79,7 @@
 						<p><a href="https://goo.gl/forms/OT1vxCQ1tEbZgN5o2" target="_blank">참가신청</a></p>
 						<footer>
 							<ul class="buttons vertical">
-								<li><a href="#main" class="button fit scrolly">상세 내용이 궁금하면 클릭</a></li>
+								<li><a href="#main" class="button fit scrolly">상세내용이 궁금하면 클릭</a></li>
 							</ul>
 						</footer>
 
@@ -154,7 +160,74 @@
 										<td class="rightBorder">17:50-18:00</td>
 										<td class="leftPadding">마무리 및 회식안내 - <strong>kuu</strong>님</td>
 									</tr>
+									<tr>
+										<h2>일시 및 장소</h2>
+									</tr>
+									<tr>
+										<p>2017. 4. 1. (토) 오후 1시~6시</p>
+									</tr>
+
+									<tr>
+										<div id="map" style="width:100%;height:400px;"></div>
+
+										<script>
+
+											var lat = 37.4971164
+											var lng = 127.0287360
+											
+											var mapOptions = {
+												center: new naver.maps.LatLng(lat, lng),
+												zoom: 10
+											};
+
+											var map = new naver.maps.Map('map', mapOptions);
+
+											var marker = new naver.maps.Marker({
+												position: new naver.maps.LatLng(lat, lng),
+												map: map
+											});
+
+											var HOME_PATH = window.HOME_PATH || '.';
+
+											var connect = new naver.maps.LatLng(lat, lng),
+											map = new naver.maps.Map('map', {
+												center: connect.destinationPoint(0, 500),
+												zoom: 10
+											}),
+											marker = new naver.maps.Marker({
+												map: map,
+												position: connect
+											});
+
+											var contentString = [
+											'<div class="iw_inner">',
+											'   <h3>커넥트재단</h3>',
+											'   <p>서서울특별시 강남구 강남대로 382 메리츠타워 7층<br />',
+											'       <img src="'+ HOME_PATH +'/images/connect.png" width="20%" height="5%" alt="커넥트재단" class="thumb" /><br />',
+											'       협회,단체 &gt; 재단 <br />',
+											'       <a href="http://www.seoul.go.kr" target="_blank">http://connect.or.kr/home/</a>',
+											'   </p>',
+											'</div>'
+											].join('');
+
+											var infowindow = new naver.maps.InfoWindow({
+												content: contentString
+											});
+
+											naver.maps.Event.addListener(marker, "click", function(e) {
+												if (infowindow.getMap()) {
+													infowindow.close();
+												} else {
+													infowindow.open(map, marker);
+												}
+											});
+
+											infowindow.open(map, marker);
+										</script>
+
+									</tr>
 									</table>
+
 									<footer>
 										<ul class="buttons">
 											<li><a href="https://goo.gl/forms/OT1vxCQ1tEbZgN5o2" target="_blank" class="button">참가신청</a></li>
@@ -350,7 +423,7 @@
 
 					<header>
 						<h2><strong>여러분</strong>도 참여하십시오!</h2>
-						<p>우리 모임의 문은 활짝 열려있습니다 :)</p>
+						<p>우리 모임의 문은 활짝 열려있습니다 :)<br>모임 참가비만으로 운영이 너무 힘듭니다 ㅠ_ㅠ<br>후원도 대환영입니다!<br>참석도 후원도 모두 사랑합니다.</p>
 					</header>
 					<footer>
 						<ul class="buttons">
