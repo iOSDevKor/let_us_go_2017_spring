@@ -1917,8 +1917,8 @@
 				color: #fff;
 			}
 
-				.icon.circle.fa-github:hover {
-					background: #e1b89b;
+				.icon.circle.fa-mobile:hover {
+					background: #ef5d46;
 				}
 
 			.icon.circle.fa-dribbble {
@@ -1928,6 +1928,15 @@
 
 				.icon.circle.fa-dribbble:hover {
 					background: #df93b8;
+				}
+
+			.icon.circle.fa-envelope-o {
+				background: #70aecd;
+				color: #fff;
+			}
+
+				.icon.circle.fa-envelope-o:hover {
+					background: #7fb7d2;
 				}
 
 		.icon.featured {
