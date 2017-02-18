@@ -184,7 +184,7 @@
 
     										var connect = new naver.maps.LatLng(lat, lng), 
     										map = new naver.maps.Map('map', {
-    											center: connect.destinationPoint(0, 400),
+    											center: connect.destinationPoint(0, 500),
     											zoom: 10
     										}),
     										marker = new naver.maps.Marker({
@@ -194,11 +194,10 @@
 
 											var contentString = [
 											'<div class="iw_inner">',
-											'   <p class="black.big">커넥트재단</p>',
-											'   <p class="black">서울특별시 강남구 강남대로 382 메리츠타워 7층<br />',
-											'       <img src="'+ HOME_PATH +'/images/connect.png" width="20%" height="5%" alt="커넥트재단" class="thumb" /><br />',
-											'       협회,단체 &gt; 재단 <br />',
-											'       <a href="http://connect.or.kr" target="_blank">http://connect.or.kr</a>',
+											'   <p class="default black big">커넥트재단</p>',
+											'   <p class="default black">서울특별시 강남구 강남대로 382 메리츠타워 7층<br />',
+											'       <a href="http://connect.or.kr" target="_blank">http://connect.or.kr</a><br />',
+											'       <img src="'+ HOME_PATH +'/images/connect.png" width="20%" height="5%" alt="커넥트재단" class="thumb"/>',
 											'   </p>',
 											'</div>'
 											].join('');
