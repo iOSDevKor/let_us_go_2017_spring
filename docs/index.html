@@ -174,29 +174,17 @@
 											var lat = 37.4971164
 											var lng = 127.0287360
 
-											var mapOptions = {
-												center: new naver.maps.LatLng(lat, lng),
-												zoom: 10
-											};
-
-											var map = new naver.maps.Map('map', mapOptions);
-
-											var marker = new naver.maps.Marker({
-												position: new naver.maps.LatLng(lat, lng),
-												map: map
-											});
-
 											var HOME_PATH = window.HOME_PATH || '.';
 
-											var connect = new naver.maps.LatLng(lat, lng),
-											map = new naver.maps.Map('map', {
-												center: connect.destinationPoint(0, 500),
-												zoom: 10
-											}),
-											marker = new naver.maps.Marker({
-												map: map,
-												position: connect
-											});
+    										var connect = new naver.maps.LatLng(lat, lng), 
+    										map = new naver.maps.Map('map', {
+    											center: cityhall.destinationPoint(0, 500),
+    											zoom: 10
+    											}),
+    											marker - new naver.maps.Marker({
+    												map: map,
+    												position: connect
+    											});
 
 											var contentString = [
 											'<div class="iw_inner">',
