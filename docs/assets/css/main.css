@@ -56,6 +56,18 @@
 		box-sizing: border-box;
 	}
 
+
+/* Naver Map */
+	.map.black p {
+		text-align: left;
+		font-color: black;
+		font-size: 1em;
+	}
+
+		.mpa.black.big p {
+			font-size: 2em;
+		}
+
 /* Containers */
 
 	.container {
