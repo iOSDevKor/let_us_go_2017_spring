@@ -58,18 +58,14 @@
 
 
 /* Naver Map */
-	p.map.black {
+	#map .black p {
 		text-align: left;
 		font-color: black;
 		font-size: 1em;
 	}
 
-		p.map.black.big {
-			font-size: 2em;
-		}
-
-	h3.map {
-		text-align: left;
+	#map .black.big p {
+		font-size: 2em;
 	}
 
 	p.left {
@@ -77,7 +73,7 @@
 	}
 
 	p.left.small {
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-color: grayscale;
 	}
 
