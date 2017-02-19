@@ -3277,17 +3277,3 @@
 				height: 34px;
 			}
 	}
-
-
-	@media screen and (max-width: 500px) {
-
-		/* td */
-			td.leftPadding {
-				font-size: 75%;
-			}
-
-			td.rightBorder {
-				font-size: 75%;
-			}
-
-	}
