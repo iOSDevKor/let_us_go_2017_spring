@@ -2068,17 +2068,6 @@
 				color: #fff;
 			}
 
-/* td */
-td.leftPadding {
-	text-align: left;
-	padding-left: 10px;
-}
-
-td.rightBorder {
-	border-right: 1px solid #fff;
-	padding-right: 10px;
-}
-
 /* Button */
 
 	input[type="button"],
@@ -2622,6 +2611,23 @@ td.rightBorder {
 
 	@media screen and (max-width: 1280px) {
 
+		/* td */
+		td.leftPadding {
+			text-align: left;
+			padding-left: 10px;
+			padding-bottom: 10px !important;
+		}
+
+		td.leftPadding br {
+			display: none;
+		}
+
+		td.rightBorder {
+			border-right: 1px solid #fff;
+			padding-right: 10px;
+			padding-bottom: 10px !important;
+		}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -3063,6 +3069,22 @@ td.rightBorder {
 
 	@media screen and (max-width: 736px) {
 
+		/* td */
+			td.leftPadding {
+				font-size: 85%;
+				padding-bottom: 20px !important;
+			}
+
+			td.leftPadding br {
+				display: initial;
+			}
+
+			td.rightBorder {
+				font-size: 85%;
+				padding-bottom: 20px !important;
+			}
+
+		
 		/* Basic */
 
 			body {
@@ -3253,6 +3275,19 @@ td.rightBorder {
 				left: 8px;
 				width: 50px;
 				height: 34px;
+			}
+	}
+
+
+	@media screen and (max-width: 500px) {
+
+		/* td */
+			td.leftPadding {
+				font-size: 75%;
+			}
+
+			td.rightBorder {
+				font-size: 75%;
 			}
 
 	}
